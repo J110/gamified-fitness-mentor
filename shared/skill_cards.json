@@ -1,0 +1,309 @@
+[
+  {
+    "id": "health_stop_delay_impulse",
+    "chapter": "HEALTH",
+    "stage": "STOP_LOSS",
+    "title": "Delay the impulse",
+    "why": "Give your system space to choose better.",
+    "time_min": 5,
+    "difficulty": 1,
+    "tags": [
+      "impulse",
+      "stability"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "stress",
+        "direction": "down",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "full": {
+        "momentum": 2,
+        "mentor_trust": 1
+      }
+    },
+    "cooldown_hours": 24
+  },
+  {
+    "id": "health_imp_walk_outside",
+    "chapter": "HEALTH",
+    "stage": "IMPROVE",
+    "title": "20min Outdoor Walk",
+    "why": "Fresh air and movement reset your cortisol.",
+    "time_min": 20,
+    "difficulty": 2,
+    "tags": [
+      "activity",
+      "nature"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "activity",
+        "direction": "up",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 3,
+        "mentor_trust": 1
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "health_start_water",
+    "chapter": "HEALTH",
+    "stage": "START_GAIN",
+    "title": "Morning Hydration",
+    "why": "Jumpstarts metabolism immediately.",
+    "time_min": 2,
+    "difficulty": 1,
+    "tags": [
+      "metabolic",
+      "habit"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "metabolic",
+        "direction": "down",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 2,
+        "mentor_trust": 1
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "finance_stop_audit",
+    "chapter": "FINANCE",
+    "stage": "STOP_LOSS",
+    "title": "No-Spend Day",
+    "why": "Break the cycle of impulsive spending.",
+    "time_min": 1440,
+    "difficulty": 3,
+    "tags": [
+      "spending",
+      "discipline"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "spending",
+        "direction": "down",
+        "weight": 2.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 5,
+        "mentor_trust": 2
+      },
+      "partial": {
+        "momentum": 2,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "finance_imp_auto_save",
+    "chapter": "FINANCE",
+    "stage": "IMPROVE",
+    "title": "Increase Auto-Save",
+    "why": "Pay yourself first automatically.",
+    "time_min": 10,
+    "difficulty": 2,
+    "tags": [
+      "savings",
+      "automation"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "savings",
+        "direction": "up",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 4,
+        "mentor_trust": 1
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "purpose_review_goals",
+    "chapter": "PURPOSE",
+    "stage": "START_GAIN",
+    "title": "Review Weekly Goals",
+    "why": "Align daily actions with long-term vision.",
+    "time_min": 15,
+    "difficulty": 2,
+    "tags": [
+      "focus",
+      "planning"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "direction",
+        "direction": "up",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 3,
+        "mentor_trust": 1
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "rel_call_friend",
+    "chapter": "RELATIONSHIPS",
+    "stage": "STOP_LOSS",
+    "title": "Call a Best Friend",
+    "why": "Combat isolation with genuine connection.",
+    "time_min": 30,
+    "difficulty": 2,
+    "tags": [
+      "connection",
+      "social"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "loneliness",
+        "direction": "down",
+        "weight": 2.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 4,
+        "mentor_trust": 2
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "rel_date_night",
+    "chapter": "RELATIONSHIPS",
+    "stage": "IMPROVE",
+    "title": "Plan Quality Time",
+    "why": "Deepen existing bonds with intentionality.",
+    "time_min": 120,
+    "difficulty": 3,
+    "tags": [
+      "connection",
+      "quality_time"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "connection",
+        "direction": "up",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 5,
+        "mentor_trust": 2
+      },
+      "partial": {
+        "momentum": 2,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  },
+  {
+    "id": "health_sleep_ritual",
+    "chapter": "HEALTH",
+    "stage": "IMPROVE",
+    "title": "Screen-free Bedtime",
+    "why": "Improve sleep quality naturally.",
+    "time_min": 60,
+    "difficulty": 2,
+    "tags": [
+      "sleep",
+      "recovery"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "sleep",
+        "direction": "up",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "full": {
+        "momentum": 3,
+        "mentor_trust": 1
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      }
+    }
+  }
+]

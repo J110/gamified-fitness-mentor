@@ -1,0 +1,19 @@
+.customPanel {
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+.customGroup { margin-top: 10px; }
+.customLabel { font-size: 12px; opacity: .7; margin-bottom: 6px; }
+.customOptions { display: flex; gap: 8px; flex-wrap: wrap; }
+.opt {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  cursor: pointer;
+}
+.opt.active { border-color: #333; background: #fff; }
+.opt.locked { opacity: .45; cursor: not-allowed; }
+.hint { margin-top: 10px; font-size: 12px; opacity: .6; }

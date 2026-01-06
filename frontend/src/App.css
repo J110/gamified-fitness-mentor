@@ -1,0 +1,527 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reset-btn {
+  background: #333;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* CARDS */
+.section-card {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* LAYOUT */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  /* Increased from 350px */
+  gap: 2rem;
+  align-items: start;
+}
+
+.left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* FORMS */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+input,
+select {
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+}
+
+/* AVATAR GRID */
+.avatar-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.avatar-option {
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.avatar-option.selected {
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.1);
+}
+
+.avatar-option img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background-color: #535bf2;
+}
+
+/* TABS */
+.chapter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #646cff;
+  color: white;
+  border-color: #646cff;
+}
+
+/* METRICS */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.metric-value.good {
+  color: #4ade80;
+}
+
+.metric-value.bad {
+  color: #f87171;
+}
+
+/* SKILLS */
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-card:hover {
+  border-color: #646cff;
+}
+
+.skill-card.card-active {
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.05);
+}
+
+.card-select {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* MENTOR */
+.mentor-display {
+  background: #000;
+  border-radius: 8px;
+  overflow: visible;
+  /* Changed from hidden to show transcript */
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-video {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  /* Reduced to leave room for transcript */
+  object-fit: contain;
+  display: block;
+}
+
+.static-avatar {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  display: block;
+}
+
+.bubble,
+.transcript-box {
+  padding: 1rem;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+  color: #eee;
+  font-style: italic;
+}
+
+/* PROGRESS */
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.stat label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.stat .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.identity {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Helper */
+.loading {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+/* FIXES FOR FORMATTING ISSUES */
+
+/* 1. Tabs - Align .tab with .tab-btn */
+.tab,
+.tab-btn {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tab.active,
+.tab-btn.active {
+  background: #646cff;
+  color: white;
+  border-color: #646cff;
+}
+
+/* 2. Metrics - Fix spacing and colors */
+.metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.metrics-list h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  background: #222;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.metric-row.good-metric {
+  border-left: 3px solid #4ade80;
+}
+
+.metric-row.good-metric span:last-child {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+.metric-row.bad-metric {
+  border-left: 3px solid #f87171;
+}
+
+.metric-row.bad-metric span:last-child {
+  color: #f87171;
+  font-weight: bold;
+}
+
+/* 3. Skill Card - Fix Layout Overlap */
+.skill-card {
+  /* Switched from flex row to column to prevent overlap */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+
+  background: #1a1a1a;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.skill-card:hover {
+  border-color: #646cff;
+}
+
+.skill-card.card-active {
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.05);
+}
+
+.skill-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.skill-card .tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.skill-card .tag {
+  background: #333;
+  color: #aaa;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.card-actions-row {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.outcome-select {
+  width: 100%;
+  padding: 0.6rem;
+  background: #252525;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+/* 4. Theme/Voice Buttons */
+.theme-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.theme-buttons button {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-buttons button.active {
+  background: #646cff;
+  color: white;
+  border-color: #646cff;
+}
+
+/* 5. Chapter View Styling */
+.chapter-card {
+  margin-top: 2rem;
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-value.good {
+  color: #4ade80;
+}
+
+.score-value.bad {
+  color: #f87171;
+}
+
+.score-value.neutral {
+  color: #facc15;
+}
+
+.stage-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+}
+
+/* Stage distinct colors */
+.stage-badge.stop_loss {
+  background: rgba(248, 113, 113, 0.1);
+  border-color: #f87171;
+  color: #f87171;
+}
+
+.stage-badge.improve {
+  background: rgba(250, 204, 21, 0.1);
+  border-color: #facc15;
+  color: #facc15;
+}
+
+.stage-badge.start_gain {
+  background: rgba(74, 222, 128, 0.1);
+  border-color: #4ade80;
+  color: #4ade80;
+}

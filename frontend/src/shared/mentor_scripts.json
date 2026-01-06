@@ -1,0 +1,62 @@
+[
+  {
+    "chapter": "HEALTH",
+    "stage": "STOP_LOSS",
+    "template": "Health alert. Your score is {{score}}. You're in the Stop Loss zone. Prioritize recovery and stability immediately."
+  },
+  {
+    "chapter": "HEALTH",
+    "stage": "IMPROVE",
+    "template": "Good traction in Health. Score: {{score}}. You're improving. Let's push a bit harder on the physical side."
+  },
+  {
+    "chapter": "HEALTH",
+    "stage": "START_GAIN",
+    "template": "Excellent Health status. Score: {{score}}. You are thriving. Focus on maintaining this high energy."
+  },
+  {
+    "chapter": "FINANCE",
+    "stage": "STOP_LOSS",
+    "template": "Financial warning. Score: {{score}}. We need to stop the bleeding. Look at the 'No Spend' actions now."
+  },
+  {
+    "chapter": "FINANCE",
+    "stage": "IMPROVE",
+    "template": "Your finances are stabilizing. Score: {{score}}. Good job. Now let's optimize your savings rate."
+  },
+  {
+    "chapter": "FINANCE",
+    "stage": "START_GAIN",
+    "template": "Financial freedom is in sight. Score: {{score}}. You have creating a solid foundation. Keep growing your assets."
+  },
+  {
+    "chapter": "PURPOSE",
+    "stage": "STOP_LOSS",
+    "template": "Purpose is drifting. Score: {{score}}. You seem disconnected. Let's find one small goal to realign."
+  },
+  {
+    "chapter": "PURPOSE",
+    "stage": "IMPROVE",
+    "template": "Purpose is clearer. Score: {{score}}. You are finding your groove. Deepen your focus on what matters."
+  },
+  {
+    "chapter": "PURPOSE",
+    "stage": "START_GAIN",
+    "template": "You are on a mission. Score: {{score}}. Your purpose is strong. Lead the way."
+  },
+  {
+    "chapter": "RELATIONSHIPS",
+    "stage": "STOP_LOSS",
+    "template": "Relationship alert. Score: {{score}}. Isolation risk. Reach out to one person today."
+  },
+  {
+    "chapter": "RELATIONSHIPS",
+    "stage": "IMPROVE",
+    "template": "Connections are building. Score: {{score}}. Nurture these bonds. Plan some quality time."
+  },
+  {
+    "chapter": "RELATIONSHIPS",
+    "stage": "START_GAIN",
+    "template": "Your social circle is vibrant. Score: {{score}}. You are well-connected and supported."
+  }
+]

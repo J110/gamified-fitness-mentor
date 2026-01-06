@@ -1,0 +1,37 @@
+[
+  {
+    "id": "health_stop_delay_impulse",
+    "chapter": "HEALTH",
+    "stage": "STOP_LOSS",
+    "title": "Delay the impulse",
+    "why": "Give your system space to choose better.",
+    "time_min": 5,
+    "difficulty": 1,
+    "tags": [
+      "impulse",
+      "stability"
+    ],
+    "tracking_targets": [
+      {
+        "metric": "stress",
+        "direction": "down",
+        "weight": 1.0
+      }
+    ],
+    "completion_effects": {
+      "none": {
+        "momentum": 0,
+        "mentor_trust": 0
+      },
+      "partial": {
+        "momentum": 1,
+        "mentor_trust": 0
+      },
+      "full": {
+        "momentum": 2,
+        "mentor_trust": 1
+      }
+    },
+    "cooldown_hours": 24
+  }
+]

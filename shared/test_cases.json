@@ -1,0 +1,16 @@
+[
+  {
+    "id": "tc_low_health_high_stress",
+    "user_seed": {
+      "gender": "male",
+      "age": 25,
+      "profession": "student",
+      "work_environment": "indoor",
+      "smoker": "no"
+    },
+    "expected": {
+      "current_chapter": "HEALTH",
+      "stage": "STOP_LOSS"
+    }
+  }
+]

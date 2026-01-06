@@ -1,0 +1,10 @@
+[
+  {
+    "id": "health_stop_base_01",
+    "chapter": "HEALTH",
+    "stage": "STOP_LOSS",
+    "variant": "base",
+    "tone": "calm",
+    "template": "We\u2019re in {{stage_name}} for {{chapter_name}}. {{weak_metric_hint}} Pick one small action: {{card_title}}. Keep it gentle and doable."
+  }
+]

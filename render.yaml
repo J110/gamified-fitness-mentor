@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gamified-fitness-mentor-api
+    env: node
+    rootDir: backend
+    plan: starter
+    autoDeploy: true
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DID_API_KEY
+        sync: false
+      - key: DID_BASE_URL
+        value: https://api.d-id.com
+      - key: CORS_ORIGIN
+        value: ""
