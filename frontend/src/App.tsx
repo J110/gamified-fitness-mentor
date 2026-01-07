@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import './App.css';
-import type { UserSeed, ChapterStatus, SkillCard, Progress, Chapter, TrackingData } from './types';
+import type { UserSeed, ChapterStatus, Progress, Chapter, TrackingData } from './types';
 import { generateTrackingData } from './lib/tracking';
 import { evaluateGamification, getCardsForChapter, getIdentityTitle } from './lib/gamification';
 import MentorPanel from './components/MentorPanel';

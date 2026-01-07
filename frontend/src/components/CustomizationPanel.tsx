@@ -1,14 +1,12 @@
 import React from 'react';
-import type { Progress } from '../types';
 
 interface CustomizationPanelProps {
-    progress: Progress;
     currentTheme: string;
     onSetTheme: (theme: string) => void;
     currentVoice: string;
 }
 
-const CustomizationPanel: React.FC<CustomizationPanelProps> = ({ progress, currentTheme, onSetTheme, currentVoice }) => {
+const CustomizationPanel: React.FC<CustomizationPanelProps> = ({ currentTheme, onSetTheme, currentVoice }) => {
     return (
         <div className="customization-panel section-card">
             <h3>Customization</h3>
