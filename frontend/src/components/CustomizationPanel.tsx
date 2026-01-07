@@ -6,18 +6,9 @@ interface CustomizationPanelProps {
     currentTheme: string;
     onSetTheme: (theme: string) => void;
     currentVoice: string;
-    onSetVoice: (voice: string) => void;
 }
 
-const CustomizationPanel: React.FC<CustomizationPanelProps> = ({ progress, currentTheme, onSetTheme, currentVoice, onSetVoice }) => {
-    // Compute unlocks logic here (adapted from patch pack)
-    const isBrightUnlocked = progress.mentor_trust >= 1;
-    const isProUnlocked = progress.momentum >= 10;
-
-    // Voice unlocks (example logic)
-    const isDeepUnlocked = progress.mentor_trust >= 5;
-    const isEnergeticUnlocked = progress.momentum >= 15;
-
+const CustomizationPanel: React.FC<CustomizationPanelProps> = ({ progress, currentTheme, onSetTheme, currentVoice }) => {
     return (
         <div className="customization-panel section-card">
             <h3>Customization</h3>
