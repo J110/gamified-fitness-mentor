@@ -287,11 +287,9 @@ function App() {
               </section>
 
               <CustomizationPanel
-                progress={progress}
                 currentTheme={theme}
                 onSetTheme={setTheme}
                 currentVoice={mentorVoice}
-                onSetVoice={setMentorVoice}
               />
             </div>
 
